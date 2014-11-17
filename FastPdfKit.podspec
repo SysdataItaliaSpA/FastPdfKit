@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
     ss.resources = 'FPKCore/standard14fonts/*.fpkfm', 'img/*.png'
     ss.preserve_paths = 'FPKCore/libFastPdfKit.a'
     ss.library = 'FastPdfKit'
-    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/FastPdfKit' }
+    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/FastPdfKit/FPKCore' }
   end
 
   s.subspec 'SimpleApp' do |ss|
